@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool tip com anchor</title>
+    <style>
+        .btn {
+            margin: 200px;
+            position: relative;
+            anchor-name: --anchor-1;
+        }
+
+        .anchor-element {
+            background-color: #333;
+            bottom: anchor(top);
+            color: #f1f1f1;
+            justify-self: anchor-center;
+            position: absolute;
+            position-anchor: --anchor-1;
+            text-align: center;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="btn">Abrir tooltip</button>
+        <div class="anchor-element">
+            <p>Texto</p>
+        </div>
+
+</body>
+
+</html>
